@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.quote-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #f6f6f6;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.quote-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffff77;
+  transition: all 0.5s ease;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  animation: fadeUp 0.4s ease;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #cfcfcf;
+  font-size: 1rem;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button, a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #00d2ff;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00d2ff;
+}
+
+button:hover, a:hover {
+  background: #3a7bd5;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
